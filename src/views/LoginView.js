@@ -9,7 +9,7 @@ function LoginView() {
       <input type="password" placeholder="Contraseña" />
       <br />
       {/* Dejamos este botón rojo a propósito para "corregirlo" después */}
-      <button style={{ background: 'blue', color: 'white', marginTop: '10px' }}>
+      <button style={{ background: 'red', color: 'white', marginTop: '10px' }}>
         Entrar
       </button>
     </div>
