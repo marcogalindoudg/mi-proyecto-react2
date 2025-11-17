@@ -1,34 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <h1>Proyecto: Actividad 2</h1>
+        <p>Componente de Formulario (Avance del Sprint 2)</p>
+
+        {/* Este es el nuevo componente */}
+        <form className="login-form">
+          <h3>Iniciar Sesión</h3>
+          <div className="form-group">
+            <label>Usuario:</label>
+            <input type="text" placeholder="Escribe tu usuario" />
+          </div>
+          <div className="form-group">
+            <label>Contraseña:</label>
+            <input type="password" placeholder="Escribe tu contraseña" />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+
+      </header>
+    </div>
   )
 }
 
